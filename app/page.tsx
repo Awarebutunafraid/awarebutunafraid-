@@ -1,3 +1,5 @@
+"use client";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0e1a] text-white overflow-x-hidden">
