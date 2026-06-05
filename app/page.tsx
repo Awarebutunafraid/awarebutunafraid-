@@ -73,9 +73,8 @@ export default function Home() {
             fontSize: 'clamp(4.5rem, 15vw, 12rem)',
             color: '#f0ebe0',
           }}>
-            <span className="block">AWARE</span>
-            <span className="block" style={{color: '#b22234', WebkitTextStroke: '1px rgba(178,34,52,0.3)'}}>BUT</span>
-            <span className="block">UNAFRAID</span>
+            <span className="block">AWARE BUT</span>
+            <span className="block" style={{color: '#b22234'}}>UNAFRAID</span>
           </h1>
 
           {/* Rule */}
