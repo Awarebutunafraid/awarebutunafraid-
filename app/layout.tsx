@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Oswald, Source_Serif_4 } from "next/font/google";
+import { Barlow_Condensed, Lora } from "next/font/google";
 import "./globals.css";
 
-const oswald = Oswald({
+const barlowCondensed = Barlow_Condensed({
   variable: "--font-oswald",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const sourceSerif = Source_Serif_4({
+const lora = Lora({
   variable: "--font-source-serif",
   subsets: ["latin"],
-  weight: ["300", "400", "600"],
+  weight: ["400", "500", "600"],
   style: ["normal", "italic"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${oswald.variable} ${sourceSerif.variable} h-full antialiased`}
+      className={`${barlowCondensed.variable} ${lora.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
