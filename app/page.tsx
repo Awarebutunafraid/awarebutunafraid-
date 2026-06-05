@@ -82,10 +82,10 @@ export default function Home() {
           <div className="flex items-center justify-center gap-4 mt-8 mb-8">
             <div style={{height: '1px', width: '48px', background: '#b22234', opacity: 0.7}}></div>
             <div style={{width: '5px', height: '5px', background: '#b22234', transform: 'rotate(45deg)', opacity: 0.8}}></div>
-            <div style={{height: '1px', flex: 1, maxWidth: '120px', background: 'rgba(240,235,224,0.12)'}}></div>
+            <div style={{height: '1px', width: '48px', background: '#b22234', opacity: 0.7}}></div>
           </div>
 
-          {/* Subhead — Source Serif, feels like editorial */}
+          {/* Subhead */}
           <p style={{
             fontFamily: 'var(--font-source-serif), Georgia, serif',
             fontSize: 'clamp(1rem, 2.2vw, 1.25rem)',
@@ -94,6 +94,8 @@ export default function Home() {
             lineHeight: 1.75,
             maxWidth: '540px',
             fontStyle: 'italic',
+            margin: '0 auto',
+            textAlign: 'center',
           }}>
             For Americans who see what&apos;s happening, say what needs to be said,
             and stand firm through faith, unity, and the grit this country was built on.
@@ -101,52 +103,92 @@ export default function Home() {
 
           {/* CTAs */}
           <div className="flex flex-wrap justify-center gap-4 mt-10">
-            <a href="#mission" style={{
-              background: '#b22234',
-              color: '#f0ebe0',
-              padding: '0.9rem 2rem',
-              fontFamily: 'var(--font-oswald), sans-serif',
-              fontWeight: 600,
-              fontSize: '0.8rem',
-              letterSpacing: '0.18em',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.6rem',
-            }}>
+            <a href="#mission"
+              className="hero-btn-mission"
+              style={{
+                background: '#b22234',
+                color: '#f0ebe0',
+                padding: '0.9rem 2.2rem',
+                fontFamily: 'var(--font-oswald), sans-serif',
+                fontWeight: 600,
+                fontSize: '1rem',
+                letterSpacing: '0.18em',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                transition: 'background 0.2s, color 0.2s, border-color 0.2s',
+              }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.background = 'transparent';
+                (e.currentTarget as HTMLElement).style.border = '1px solid #b22234';
+                (e.currentTarget as HTMLElement).style.color = '#b22234';
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.background = '#b22234';
+                (e.currentTarget as HTMLElement).style.border = '1px solid transparent';
+                (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
+              }}
+            >
               THE MISSION
               <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </a>
-            <a href="#podcast" style={{
-              border: '1px solid rgba(240,235,224,0.2)',
-              color: 'rgba(240,235,224,0.7)',
-              padding: '0.9rem 2rem',
-              fontFamily: 'var(--font-oswald), sans-serif',
-              fontWeight: 500,
-              fontSize: '0.8rem',
-              letterSpacing: '0.18em',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.6rem',
-            }}>
+            <a href="#podcast"
+              style={{
+                border: '1px solid rgba(240,235,224,0.25)',
+                color: 'rgba(240,235,224,0.7)',
+                padding: '0.9rem 2.2rem',
+                fontFamily: 'var(--font-oswald), sans-serif',
+                fontWeight: 500,
+                fontSize: '1rem',
+                letterSpacing: '0.18em',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                transition: 'background 0.2s, color 0.2s, border-color 0.2s',
+              }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.background = '#b22234';
+                (e.currentTarget as HTMLElement).style.borderColor = '#b22234';
+                (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.background = 'transparent';
+                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,235,224,0.25)';
+                (e.currentTarget as HTMLElement).style.color = 'rgba(240,235,224,0.7)';
+              }}
+            >
               <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
               </svg>
               PODCAST
             </a>
-            <a href="#join" style={{
-              border: '1px solid rgba(240,235,224,0.2)',
-              color: 'rgba(240,235,224,0.7)',
-              padding: '0.9rem 2rem',
-              fontFamily: 'var(--font-oswald), sans-serif',
-              fontWeight: 500,
-              fontSize: '0.8rem',
-              letterSpacing: '0.18em',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.6rem',
-            }}>
+            <a href="#join"
+              style={{
+                border: '1px solid rgba(240,235,224,0.25)',
+                color: 'rgba(240,235,224,0.7)',
+                padding: '0.9rem 2.2rem',
+                fontFamily: 'var(--font-oswald), sans-serif',
+                fontWeight: 500,
+                fontSize: '1rem',
+                letterSpacing: '0.18em',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.6rem',
+                transition: 'background 0.2s, color 0.2s, border-color 0.2s',
+              }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.background = '#b22234';
+                (e.currentTarget as HTMLElement).style.borderColor = '#b22234';
+                (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.background = 'transparent';
+                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(240,235,224,0.25)';
+                (e.currentTarget as HTMLElement).style.color = 'rgba(240,235,224,0.7)';
+              }}
+            >
               MERCH
             </a>
           </div>
