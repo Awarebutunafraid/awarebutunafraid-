@@ -5,24 +5,39 @@ export default function Home() {
     <main className="min-h-screen overflow-x-hidden" style={{background: '#0e0e0e', color: '#f0ebe0'}}>
 
       {/* ── NAV ── */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-4 border-b border-white/5" style={{background: 'rgba(14,14,14,0.96)', backdropFilter: 'blur(8px)'}}>
-        <a href="/" style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '1.05rem', letterSpacing: '0.12em', color: '#f0ebe0', fontWeight: 600}}>
-          AWARE BUT UNAFRAID
-        </a>
-        <div className="hidden md:flex items-center gap-8" style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.8rem', letterSpacing: '0.15em', fontWeight: 500}}>
-          <a href="#mission" className="transition-colors" style={{color: '#8a9ab0'}}>MISSION</a>
-          <a href="#podcast" className="transition-colors" style={{color: '#8a9ab0'}}>PODCAST</a>
-          <a href="#join" className="transition-colors" style={{color: '#8a9ab0'}}>MERCH</a>
-          <a href="#join" style={{
-            background: '#b22234',
-            color: '#f0ebe0',
-            padding: '0.5rem 1.25rem',
-            fontWeight: 600,
-            letterSpacing: '0.12em',
-            fontSize: '0.75rem',
-          }}>
-            JOIN THE MOVEMENT
+      <nav className="fixed top-0 left-0 right-0 z-50 flex flex-col border-b border-white/5" style={{background: 'rgba(14,14,14,0.97)', backdropFilter: 'blur(8px)'}}>
+        {/* Top row */}
+        <div className="flex items-center justify-between px-8 py-4">
+          <a href="/" style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '1.05rem', letterSpacing: '0.12em', color: '#c8bfad', fontWeight: 600}}>
+            AWARE BUT UNAFRAID
           </a>
+          <div className="hidden md:flex items-center gap-8" style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.8rem', letterSpacing: '0.15em', fontWeight: 500}}>
+            <a href="#mission" className="transition-colors" style={{color: '#8a9ab0'}}>MISSION</a>
+            <a href="#podcast" className="transition-colors" style={{color: '#8a9ab0'}}>PODCAST</a>
+            <a href="#join" className="transition-colors" style={{color: '#8a9ab0'}}>MERCH</a>
+            <a href="#join" style={{
+              background: '#b22234',
+              color: '#c8bfad',
+              padding: '0.5rem 1.25rem',
+              fontWeight: 600,
+              letterSpacing: '0.12em',
+              fontSize: '0.75rem',
+            }}>
+              JOIN THE MOVEMENT
+            </a>
+          </div>
+        </div>
+        {/* Eyebrow — centered in nav */}
+        <div className="flex items-center justify-center gap-3 pb-2.5">
+          <div style={{width: '24px', height: '1px', background: '#b22234', opacity: 0.7}}></div>
+          <span style={{
+            fontFamily: 'var(--font-oswald), sans-serif',
+            fontSize: '0.6rem',
+            letterSpacing: '0.35em',
+            color: '#b22234',
+            fontWeight: 500,
+          }}>A MOVEMENT &nbsp;·&nbsp; A MISSION &nbsp;·&nbsp; A MOMENT</span>
+          <div style={{width: '24px', height: '1px', background: '#b22234', opacity: 0.7}}></div>
         </div>
       </nav>
 
@@ -52,18 +67,6 @@ export default function Home() {
         {/* Hero copy — centered */}
         <div className="relative px-8 md:px-16 lg:px-24 max-w-4xl mx-auto pt-36 pb-20 text-center" style={{zIndex: 2}}>
 
-          {/* Dateline / eyebrow — like a newspaper */}
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div style={{width: '2px', height: '1.1rem', background: '#b22234'}}></div>
-            <span style={{
-              fontFamily: 'var(--font-oswald), sans-serif',
-              fontSize: '0.68rem',
-              letterSpacing: '0.35em',
-              color: '#b22234',
-              fontWeight: 500,
-            }}>A MOVEMENT &nbsp;·&nbsp; A MISSION &nbsp;·&nbsp; A MOMENT</span>
-          </div>
-
           {/* Main title */}
           <h1 style={{
             fontFamily: 'var(--font-oswald), sans-serif',
@@ -71,7 +74,7 @@ export default function Home() {
             lineHeight: 0.92,
             letterSpacing: '0.02em',
             fontSize: 'clamp(4.5rem, 15vw, 12rem)',
-            color: '#d8d0c0',
+            color: '#c8bfad',
             textAlign: 'center',
           }}>
             <span className="block">AWARE</span>
