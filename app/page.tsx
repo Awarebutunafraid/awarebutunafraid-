@@ -49,11 +49,11 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{background: 'linear-gradient(to bottom, transparent 0%, #b22234 20%, #b22234 80%, transparent 100%)', opacity: 0.7}}></div>
         </div>
 
-        {/* Hero copy — left aligned */}
-        <div className="relative px-8 md:px-16 lg:px-24 max-w-4xl pt-28 pb-20" style={{zIndex: 2}}>
+        {/* Hero copy — centered */}
+        <div className="relative px-8 md:px-16 lg:px-24 max-w-4xl mx-auto pt-28 pb-20 text-center" style={{zIndex: 2}}>
 
           {/* Dateline / eyebrow — like a newspaper */}
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center justify-center gap-3 mb-8">
             <div style={{width: '2px', height: '1.1rem', background: '#b22234'}}></div>
             <span style={{
               fontFamily: 'var(--font-oswald), sans-serif',
@@ -72,13 +72,15 @@ export default function Home() {
             letterSpacing: '0.02em',
             fontSize: 'clamp(4.5rem, 15vw, 12rem)',
             color: '#f0ebe0',
+            textAlign: 'center',
           }}>
-            <span className="block">AWARE BUT</span>
-            <span className="block" style={{color: '#b22234'}}>UNAFRAID</span>
+            <span className="block">AWARE</span>
+            <span className="block" style={{color: '#b22234'}}>BUT</span>
+            <span className="block">UNAFRAID</span>
           </h1>
 
           {/* Rule */}
-          <div className="flex items-center gap-4 mt-8 mb-8">
+          <div className="flex items-center justify-center gap-4 mt-8 mb-8">
             <div style={{height: '1px', width: '48px', background: '#b22234', opacity: 0.7}}></div>
             <div style={{width: '5px', height: '5px', background: '#b22234', transform: 'rotate(45deg)', opacity: 0.8}}></div>
             <div style={{height: '1px', flex: 1, maxWidth: '120px', background: 'rgba(240,235,224,0.12)'}}></div>
@@ -99,7 +101,7 @@ export default function Home() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-wrap gap-4 mt-10">
+          <div className="flex flex-wrap justify-center gap-4 mt-10">
             <a href="#mission" style={{
               background: '#b22234',
               color: '#f0ebe0',
@@ -137,7 +139,7 @@ export default function Home() {
           </div>
 
           {/* Scroll indicator */}
-          <div className="mt-16 flex items-center gap-3" style={{opacity: 0.3}}>
+          <div className="mt-16 flex flex-col items-center gap-3" style={{opacity: 0.3}}>
             <div style={{width: '1px', height: '40px', background: 'linear-gradient(to bottom, rgba(240,235,224,0.6), transparent)'}}></div>
             <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.6rem', letterSpacing: '0.3em', color: '#f0ebe0'}}>SCROLL</span>
           </div>
