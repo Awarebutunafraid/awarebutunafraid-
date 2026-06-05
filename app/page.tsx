@@ -50,7 +50,7 @@ export default function Home() {
         </div>
 
         {/* Hero copy — centered */}
-        <div className="relative px-8 md:px-16 lg:px-24 max-w-4xl mx-auto pt-28 pb-20 text-center" style={{zIndex: 2}}>
+        <div className="relative px-8 md:px-16 lg:px-24 max-w-4xl mx-auto pt-36 pb-20 text-center" style={{zIndex: 2}}>
 
           {/* Dateline / eyebrow — like a newspaper */}
           <div className="flex items-center justify-center gap-3 mb-8">
@@ -71,7 +71,7 @@ export default function Home() {
             lineHeight: 0.92,
             letterSpacing: '0.02em',
             fontSize: 'clamp(4.5rem, 15vw, 12rem)',
-            color: '#f0ebe0',
+            color: '#d8d0c0',
             textAlign: 'center',
           }}>
             <span className="block">AWARE</span>
@@ -91,7 +91,7 @@ export default function Home() {
             fontFamily: 'var(--font-source-serif), Georgia, serif',
             fontSize: 'clamp(1rem, 2.2vw, 1.25rem)',
             fontWeight: 300,
-            color: 'rgba(240,235,224,0.7)',
+            color: 'rgba(216,208,192,0.65)',
             lineHeight: 1.75,
             maxWidth: '540px',
             fontStyle: 'italic',
