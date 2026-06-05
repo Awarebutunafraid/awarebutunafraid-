@@ -31,42 +31,22 @@ export default function Home() {
 
         {/* BG layers */}
         <div className="absolute inset-0">
-          {/* Base: near black with faint navy tint */}
-          <div className="absolute inset-0" style={{background: 'linear-gradient(170deg, #0a0f18 0%, #0e0e0e 55%, #160808 100%)'}}></div>
-
-          {/* Worn flag stripe — left edge */}
-          <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{background: 'linear-gradient(to bottom, transparent 0%, #b22234 20%, #b22234 80%, transparent 100%)', opacity: 0.6}}></div>
-
-          {/* Faint horizontal rule like a newspaper column */}
-          <div className="absolute top-0 left-0 right-0 h-px" style={{background: 'linear-gradient(to right, transparent, rgba(178,34,52,0.4), transparent)'}}></div>
-
-          {/* Low star pattern — very subtle */}
+          {/* Hero photo */}
           <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle, rgba(240,235,224,0.06) 1px, transparent 1px)',
-            backgroundSize: '52px 52px',
-            backgroundPosition: '26px 26px',
+            backgroundImage: 'url(/hero-bg.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center 40%',
+            backgroundRepeat: 'no-repeat',
           }}></div>
 
-          {/* Red ground glow */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[350px]" style={{background: 'radial-gradient(ellipse at bottom, rgba(178,34,52,0.12), transparent 70%)'}}></div>
+          {/* Dark overlay — left side heavier so text is readable, right side lighter to show landscape */}
+          <div className="absolute inset-0" style={{background: 'linear-gradient(105deg, rgba(10,12,18,0.92) 0%, rgba(10,12,18,0.82) 40%, rgba(10,12,18,0.45) 70%, rgba(10,12,18,0.25) 100%)'}}></div>
 
-          {/* Navy glow top right */}
-          <div className="absolute top-0 right-0 w-[500px] h-[500px]" style={{background: 'radial-gradient(ellipse at top right, rgba(13,27,42,0.8), transparent 70%)'}}></div>
+          {/* Bottom fade to next section */}
+          <div className="absolute bottom-0 left-0 right-0 h-40" style={{background: 'linear-gradient(to bottom, transparent, #0d0d0d)'}}></div>
 
-          {/* Vignette */}
-          <div className="absolute inset-0" style={{background: 'radial-gradient(ellipse at 50% 40%, transparent 25%, rgba(0,0,0,0.55) 100%)'}}></div>
-        </div>
-
-        {/* Eagle — large watermark, left-weighted */}
-        <div className="absolute inset-0 flex items-center justify-end pr-8 md:pr-20 pointer-events-none select-none" style={{zIndex: 1}}>
-          <svg viewBox="0 0 500 500" className="w-[420px] h-[420px] md:w-[580px] md:h-[580px]" style={{opacity: 0.055}} fill="#f0ebe0" xmlns="http://www.w3.org/2000/svg">
-            <path d="M250 40 C230 40 210 50 195 68 C165 55 130 62 110 82 C90 102 85 130 92 155 C70 150 48 158 38 175 C28 192 32 215 46 228 C30 234 18 248 22 265 C26 282 44 292 62 288 C56 304 62 322 76 330 C90 338 108 332 116 318 C122 334 136 344 152 342 C168 340 178 326 176 310 C186 320 200 326 216 320 C232 314 238 298 234 282 L250 380 L266 282 C262 298 268 314 284 320 C300 326 314 320 324 310 C322 326 332 340 348 342 C364 344 378 334 384 318 C392 332 410 338 424 330 C438 322 444 304 438 288 C456 292 474 282 478 265 C482 248 470 234 454 228 C468 215 472 192 462 175 C452 158 430 150 408 155 C415 130 410 102 390 82 C370 62 335 55 305 68 C290 50 270 40 250 40Z"/>
-            <ellipse cx="250" cy="62" rx="30" ry="34"/>
-            <path d="M270 74 L298 68 L280 85 Z"/>
-            <circle cx="264" cy="55" r="6"/>
-            <circle cx="265" cy="54" r="2.5" fill="#0e0e0e"/>
-            <path d="M228 382 L215 425 L227 418 L223 440 L235 428 L231 448 L242 434 L250 452 L258 434 L269 448 L265 428 L277 440 L273 418 L285 425 L272 382Z"/>
-          </svg>
+          {/* Worn flag stripe — left edge */}
+          <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{background: 'linear-gradient(to bottom, transparent 0%, #b22234 20%, #b22234 80%, transparent 100%)', opacity: 0.7}}></div>
         </div>
 
         {/* Hero copy — left aligned */}
