@@ -34,7 +34,7 @@ export default function Home() {
           {/* Hero photo */}
           <div className="absolute inset-0" style={{
             backgroundImage: 'url(/hero-bg.jpg)',
-            backgroundSize: 'cover',
+            backgroundSize: '110%',
             backgroundPosition: 'center 40%',
             backgroundRepeat: 'no-repeat',
           }}></div>
