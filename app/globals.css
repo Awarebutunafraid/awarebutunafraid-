@@ -30,6 +30,20 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Ken Burns — slow drift and breathe on hero background */
+@keyframes kenBurns {
+  0%   { transform: scale(1.08) translate(0%, 0%); }
+  25%  { transform: scale(1.12) translate(-1%, 0.5%); }
+  50%  { transform: scale(1.1)  translate(-0.5%, -0.5%); }
+  75%  { transform: scale(1.13) translate(0.5%, 0.5%); }
+  100% { transform: scale(1.08) translate(0%, 0%); }
+}
+
+.hero-bg-animate {
+  animation: kenBurns 22s ease-in-out infinite;
+  transform-origin: center center;
+}
+
 /* Noise/grain texture overlay */
 body::before {
   content: '';

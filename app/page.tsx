@@ -43,7 +43,7 @@ export default function Home() {
         {/* BG layers */}
         <div className="absolute inset-0">
           {/* Hero photo */}
-          <div className="absolute inset-0" style={{
+          <div className="absolute inset-0 hero-bg-animate" style={{
             backgroundImage: 'url(/hero-bg.jpg)',
             backgroundSize: '110%',
             backgroundPosition: 'center 40%',
