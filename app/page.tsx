@@ -11,28 +11,24 @@ export default function Home() {
           <a href="/" style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '1.05rem', letterSpacing: '0.12em', color: '#c8bfad', fontWeight: 600}}>
             AWARE BUT UNAFRAID
           </a>
-          <div className="hidden md:flex items-center gap-8" style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.8rem', letterSpacing: '0.15em', fontWeight: 500}}>
-            <a href="#mission" className="transition-colors" style={{color: '#8a9ab0'}}>MISSION</a>
-            <a href="#podcast" className="transition-colors" style={{color: '#8a9ab0'}}>PODCAST</a>
-            <a href="#join" className="transition-colors" style={{color: '#8a9ab0'}}>MERCH</a>
-            <a href="#join" style={{
-              background: '#b22234',
-              color: '#c8bfad',
-              padding: '0.5rem 1.25rem',
-              fontWeight: 600,
-              letterSpacing: '0.12em',
-              fontSize: '0.75rem',
-            }}>
-              JOIN THE MOVEMENT
-            </a>
-          </div>
+          <a href="#join" style={{
+            background: '#b22234',
+            color: '#c8bfad',
+            padding: '0.5rem 1.25rem',
+            fontFamily: 'var(--font-oswald), sans-serif',
+            fontWeight: 600,
+            letterSpacing: '0.12em',
+            fontSize: '0.75rem',
+          }}>
+            JOIN THE MOVEMENT
+          </a>
         </div>
         {/* Eyebrow — centered in nav */}
         <div className="flex items-center justify-center gap-3 pb-2.5">
           <div style={{width: '24px', height: '1px', background: '#b22234', opacity: 0.7}}></div>
           <span style={{
             fontFamily: 'var(--font-oswald), sans-serif',
-            fontSize: '0.6rem',
+            fontSize: '0.72rem',
             letterSpacing: '0.35em',
             color: '#b22234',
             fontWeight: 500,
@@ -137,7 +133,21 @@ export default function Home() {
               <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
               </svg>
-              LISTEN NOW
+              PODCAST
+            </a>
+            <a href="#join" style={{
+              border: '1px solid rgba(240,235,224,0.2)',
+              color: 'rgba(240,235,224,0.7)',
+              padding: '0.9rem 2rem',
+              fontFamily: 'var(--font-oswald), sans-serif',
+              fontWeight: 500,
+              fontSize: '0.8rem',
+              letterSpacing: '0.18em',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.6rem',
+            }}>
+              MERCH
             </a>
           </div>
 
