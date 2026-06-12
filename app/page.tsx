@@ -38,7 +38,7 @@ export default function Home() {
       </nav>
 
       {/* ── HERO ── */}
-      <section className="relative min-h-screen flex flex-col justify-center overflow-hidden">
+      <section className="relative min-h-screen flex flex-col justify-start overflow-hidden">
 
         {/* BG layers */}
         <div className="absolute inset-0">
@@ -60,16 +60,16 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{background: 'linear-gradient(to bottom, transparent 0%, #b22234 20%, #b22234 80%, transparent 100%)', opacity: 0.7}}></div>
         </div>
 
-        {/* Hero copy — centered */}
-        <div className="relative px-8 md:px-16 lg:px-24 mx-auto pt-36 pb-20 text-center w-full" style={{zIndex: 2}}>
+        {/* Hero copy — title anchored to bottom of top third */}
+        <div className="relative px-8 md:px-16 lg:px-24 mx-auto pb-20 text-center w-full" style={{zIndex: 2, paddingTop: '30vh'}}>
 
           {/* Main title — antique inked type, single line, full width */}
           <h1 style={{
             fontFamily: 'var(--font-script), Georgia, serif',
             fontWeight: 400,
-            lineHeight: 1.0,
+            lineHeight: 1.05,
             letterSpacing: '0.005em',
-            fontSize: 'clamp(2rem, 12vw, 13rem)',
+            fontSize: 'clamp(2rem, 9vw, 9rem)',
             color: '#c8bfad',
             textAlign: 'center',
             whiteSpace: 'nowrap',
@@ -79,7 +79,7 @@ export default function Home() {
           </h1>
 
           {/* Rule */}
-          <div className="flex items-center justify-center gap-4 mt-8 mb-8 max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-4 mt-16 mb-8 max-w-4xl mx-auto">
             <div style={{height: '1px', width: '48px', background: '#b22234', opacity: 0.7}}></div>
             <div style={{width: '5px', height: '5px', background: '#b22234', transform: 'rotate(45deg)', opacity: 0.8}}></div>
             <div style={{height: '1px', width: '48px', background: '#b22234', opacity: 0.7}}></div>
