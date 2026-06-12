@@ -69,13 +69,13 @@ export default function Home() {
             fontWeight: 400,
             lineHeight: 1.05,
             letterSpacing: '0.005em',
-            fontSize: 'clamp(2.25rem, 10vw, 10rem)',
+            fontSize: 'clamp(2.5rem, 11.5vw, 12rem)',
             color: '#c8bfad',
             textAlign: 'center',
             whiteSpace: 'nowrap',
             width: '100%',
           }}>
-            Aware <span style={{color: '#9e2230', WebkitTextStroke: '2px #000', paintOrder: 'stroke fill'}}>But</span> Unafraid
+            Aware <span style={{color: 'rgba(158,34,48,0.78)', WebkitTextStroke: '2px #000', paintOrder: 'stroke fill'}}>But</span> Unafraid
           </h1>
 
           {/* Rule */}
@@ -88,11 +88,11 @@ export default function Home() {
           {/* Subhead */}
           <p style={{
             fontFamily: 'var(--font-source-serif), Georgia, serif',
-            fontSize: 'clamp(1.15rem, 2.5vw, 1.45rem)',
+            fontSize: 'clamp(1.35rem, 3vw, 1.75rem)',
             fontWeight: 300,
             color: 'rgba(216,208,192,0.65)',
             lineHeight: 1.75,
-            maxWidth: '600px',
+            maxWidth: '720px',
             fontStyle: 'italic',
             margin: '0 auto',
             textAlign: 'center',
@@ -108,10 +108,10 @@ export default function Home() {
               style={{
                 background: '#9e2230',
                 color: '#f0ebe0',
-                padding: '1.05rem 2.5rem',
+                padding: '1.25rem 3rem',
                 fontFamily: 'var(--font-oswald), sans-serif',
                 fontWeight: 600,
-                fontSize: '1.15rem',
+                fontSize: '1.3rem',
                 letterSpacing: '0.18em',
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -138,10 +138,10 @@ export default function Home() {
               style={{
                 border: '1px solid rgba(240,235,224,0.25)',
                 color: 'rgba(240,235,224,0.7)',
-                padding: '1.05rem 2.5rem',
+                padding: '1.25rem 3rem',
                 fontFamily: 'var(--font-oswald), sans-serif',
                 fontWeight: 500,
-                fontSize: '1.15rem',
+                fontSize: '1.3rem',
                 letterSpacing: '0.18em',
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -168,10 +168,10 @@ export default function Home() {
               style={{
                 border: '1px solid rgba(240,235,224,0.25)',
                 color: 'rgba(240,235,224,0.7)',
-                padding: '1.05rem 2.5rem',
+                padding: '1.25rem 3rem',
                 fontFamily: 'var(--font-oswald), sans-serif',
                 fontWeight: 500,
-                fontSize: '1.15rem',
+                fontSize: '1.3rem',
                 letterSpacing: '0.18em',
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -202,15 +202,49 @@ export default function Home() {
       </section>
 
       {/* ── MISSION PREVIEW ── */}
-      <section id="mission" className="relative py-28 px-8 md:px-16 lg:px-24" style={{background: '#0d0d0d', borderTop: '1px solid rgba(240,235,224,0.06)'}}>
+      <section id="mission" className="relative py-28 px-8 md:px-16 lg:px-24 overflow-hidden" style={{background: '#0d0d0d', borderTop: '1px solid rgba(240,235,224,0.06)'}}>
+
+        {/* "We the People" — sharp at top, blurring + fading downward */}
+        {/* Sharp layer: visible only near the top via a mask */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          backgroundImage: 'url(/shutterstock_61144897.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+          WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 20%, transparent 42%)',
+          maskImage: 'linear-gradient(to bottom, black 0%, black 20%, transparent 42%)',
+          pointerEvents: 'none',
+        }}></div>
+
+        {/* Blurred layer underneath: fills the rest, dissolving downward */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          backgroundImage: 'url(/shutterstock_61144897.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          backgroundRepeat: 'no-repeat',
+          filter: 'blur(7px)',
+          transform: 'scale(1.04)',
+          WebkitMaskImage: 'linear-gradient(to bottom, transparent 16%, black 38%, transparent 80%)',
+          maskImage: 'linear-gradient(to bottom, transparent 16%, black 38%, transparent 80%)',
+          pointerEvents: 'none',
+        }}></div>
+
+        {/* Dark overlay so the copy stays readable on the parchment */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to bottom, rgba(13,13,13,0.6) 0%, rgba(13,13,13,0.72) 35%, rgba(13,13,13,0.9) 68%, #0d0d0d 100%)',
+          pointerEvents: 'none',
+        }}></div>
 
         {/* Section marker */}
-        <div className="flex items-center gap-3 mb-14">
+        <div className="relative flex items-center gap-3 mb-14" style={{zIndex: 2}}>
           <div style={{width: '2px', height: '1.1rem', background: '#9e2230'}}></div>
           <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#9e2230', fontWeight: 500}}>THE MISSION</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-6xl">
+        <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-6xl" style={{zIndex: 2}}>
           <div>
             <h2 style={{
               fontFamily: 'var(--font-oswald), sans-serif',
@@ -271,7 +305,7 @@ export default function Home() {
         </div>
 
         {/* Three Pillars */}
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-20 max-w-6xl" style={{borderTop: '1px solid rgba(240,235,224,0.07)'}}>
+        <div className="relative grid grid-cols-1 md:grid-cols-3 mt-20 max-w-6xl" style={{borderTop: '1px solid rgba(240,235,224,0.07)', zIndex: 2}}>
           {[
             { num: "I", title: "See Clearly", body: "Face the truth of what's happening — politically, culturally, spiritually — without flinching or filtering." },
             { num: "II", title: "Speak Honestly", body: "Say what needs to be said. The movement grows when people stop whispering and start talking out loud." },
