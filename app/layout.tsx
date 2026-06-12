@@ -1,18 +1,29 @@
 import type { Metadata } from "next";
-import { Barlow_Condensed, Lora } from "next/font/google";
+import { EB_Garamond, Tangerine } from "next/font/google";
 import "./globals.css";
 
-const barlowCondensed = Barlow_Condensed({
+// Refined historic serif — used for headings AND body (replaces the old
+// condensed-sans + Lora pairing). Mapped onto the existing --font-oswald
+// and --font-source-serif variables so all current usages pick it up.
+const ebGaramond = EB_Garamond({
   variable: "--font-oswald",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800"],
+  style: ["normal", "italic"],
 });
 
-const lora = Lora({
+const ebGaramondSerif = EB_Garamond({
   variable: "--font-source-serif",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
+});
+
+// Engrossed Declaration-style script — used only for the big hero title.
+const tangerine = Tangerine({
+  variable: "--font-script",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${barlowCondensed.variable} ${lora.variable} h-full antialiased`}
+      className={`${ebGaramond.variable} ${ebGaramondSerif.variable} ${tangerine.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

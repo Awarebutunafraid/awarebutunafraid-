@@ -63,19 +63,19 @@ export default function Home() {
         {/* Hero copy — centered */}
         <div className="relative px-8 md:px-16 lg:px-24 max-w-4xl mx-auto pt-36 pb-20 text-center" style={{zIndex: 2}}>
 
-          {/* Main title */}
+          {/* Main title — engrossed Declaration-style script */}
           <h1 style={{
-            fontFamily: 'var(--font-oswald), sans-serif',
+            fontFamily: 'var(--font-script), cursive',
             fontWeight: 700,
-            lineHeight: 0.92,
-            letterSpacing: '0.02em',
-            fontSize: 'clamp(4.5rem, 15vw, 12rem)',
+            lineHeight: 0.82,
+            letterSpacing: '0.01em',
+            fontSize: 'clamp(5.5rem, 19vw, 15rem)',
             color: '#c8bfad',
             textAlign: 'center',
           }}>
-            <span className="block">AWARE</span>
-            <span className="block" style={{color: '#b22234'}}>BUT</span>
-            <span className="block">UNAFRAID</span>
+            <span className="block">Aware</span>
+            <span className="block" style={{color: '#b22234'}}>But</span>
+            <span className="block">Unafraid</span>
           </h1>
 
           {/* Rule */}
