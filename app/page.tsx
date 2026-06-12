@@ -12,7 +12,7 @@ export default function Home() {
             AWARE BUT UNAFRAID
           </a>
           <a href="#join" style={{
-            background: '#7e1925',
+            background: '#9e2230',
             color: '#c8bfad',
             padding: '0.5rem 1.25rem',
             fontFamily: 'var(--font-oswald), sans-serif',
@@ -25,15 +25,15 @@ export default function Home() {
         </div>
         {/* Eyebrow — centered in nav */}
         <div className="flex items-center justify-center gap-3 pb-2.5">
-          <div style={{width: '24px', height: '1px', background: '#7e1925', opacity: 0.7}}></div>
+          <div style={{width: '24px', height: '1px', background: '#9e2230', opacity: 0.7}}></div>
           <span style={{
             fontFamily: 'var(--font-oswald), sans-serif',
             fontSize: '0.72rem',
             letterSpacing: '0.35em',
-            color: '#7e1925',
+            color: '#9e2230',
             fontWeight: 500,
           }}>A MOVEMENT &nbsp;·&nbsp; A MISSION &nbsp;·&nbsp; A MOMENT</span>
-          <div style={{width: '24px', height: '1px', background: '#7e1925', opacity: 0.7}}></div>
+          <div style={{width: '24px', height: '1px', background: '#9e2230', opacity: 0.7}}></div>
         </div>
       </nav>
 
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 right-0 h-40" style={{background: 'linear-gradient(to bottom, transparent, #0d0d0d)'}}></div>
 
           {/* Worn flag stripe — left edge */}
-          <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{background: 'linear-gradient(to bottom, transparent 0%, #7e1925 20%, #7e1925 80%, transparent 100%)', opacity: 0.7}}></div>
+          <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{background: 'linear-gradient(to bottom, transparent 0%, #9e2230 20%, #9e2230 80%, transparent 100%)', opacity: 0.7}}></div>
         </div>
 
         {/* Hero copy — title anchored to bottom of top third */}
@@ -75,14 +75,14 @@ export default function Home() {
             whiteSpace: 'nowrap',
             width: '100%',
           }}>
-            Aware <span style={{color: '#7e1925', WebkitTextStroke: '2px #000', paintOrder: 'stroke fill'}}>But</span> Unafraid
+            Aware <span style={{color: '#9e2230', WebkitTextStroke: '2px #000', paintOrder: 'stroke fill'}}>But</span> Unafraid
           </h1>
 
           {/* Rule */}
           <div className="flex items-center justify-center gap-4 mt-16 mb-8 max-w-4xl mx-auto">
-            <div style={{height: '1px', width: '48px', background: '#7e1925', opacity: 0.7}}></div>
-            <div style={{width: '5px', height: '5px', background: '#7e1925', transform: 'rotate(45deg)', opacity: 0.8}}></div>
-            <div style={{height: '1px', width: '48px', background: '#7e1925', opacity: 0.7}}></div>
+            <div style={{height: '1px', width: '48px', background: '#9e2230', opacity: 0.7}}></div>
+            <div style={{width: '5px', height: '5px', background: '#9e2230', transform: 'rotate(45deg)', opacity: 0.8}}></div>
+            <div style={{height: '1px', width: '48px', background: '#9e2230', opacity: 0.7}}></div>
           </div>
 
           {/* Subhead */}
@@ -106,7 +106,7 @@ export default function Home() {
             <a href="#mission"
               className="hero-btn-mission"
               style={{
-                background: '#7e1925',
+                background: '#9e2230',
                 color: '#f0ebe0',
                 padding: '1.05rem 2.5rem',
                 fontFamily: 'var(--font-oswald), sans-serif',
@@ -120,11 +120,11 @@ export default function Home() {
               }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLElement).style.background = 'transparent';
-                (e.currentTarget as HTMLElement).style.border = '1px solid #7e1925';
-                (e.currentTarget as HTMLElement).style.color = '#7e1925';
+                (e.currentTarget as HTMLElement).style.border = '1px solid #9e2230';
+                (e.currentTarget as HTMLElement).style.color = '#9e2230';
               }}
               onMouseLeave={e => {
-                (e.currentTarget as HTMLElement).style.background = '#7e1925';
+                (e.currentTarget as HTMLElement).style.background = '#9e2230';
                 (e.currentTarget as HTMLElement).style.border = '1px solid transparent';
                 (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
               }}
@@ -149,8 +149,8 @@ export default function Home() {
                 transition: 'background 0.2s, color 0.2s, border-color 0.2s',
               }}
               onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.background = '#7e1925';
-                (e.currentTarget as HTMLElement).style.borderColor = '#7e1925';
+                (e.currentTarget as HTMLElement).style.background = '#9e2230';
+                (e.currentTarget as HTMLElement).style.borderColor = '#9e2230';
                 (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
               }}
               onMouseLeave={e => {
@@ -179,8 +179,8 @@ export default function Home() {
                 transition: 'background 0.2s, color 0.2s, border-color 0.2s',
               }}
               onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.background = '#7e1925';
-                (e.currentTarget as HTMLElement).style.borderColor = '#7e1925';
+                (e.currentTarget as HTMLElement).style.background = '#9e2230';
+                (e.currentTarget as HTMLElement).style.borderColor = '#9e2230';
                 (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
               }}
               onMouseLeave={e => {
@@ -206,8 +206,8 @@ export default function Home() {
 
         {/* Section marker */}
         <div className="flex items-center gap-3 mb-14">
-          <div style={{width: '2px', height: '1.1rem', background: '#7e1925'}}></div>
-          <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#7e1925', fontWeight: 500}}>THE MISSION</span>
+          <div style={{width: '2px', height: '1.1rem', background: '#9e2230'}}></div>
+          <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#9e2230', fontWeight: 500}}>THE MISSION</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-6xl">
@@ -221,19 +221,19 @@ export default function Home() {
               color: '#f0ebe0',
             }}>
               TRUTH HAS NEVER<br/>
-              <span style={{color: '#7e1925'}}>NEEDED PERMISSION</span>
+              <span style={{color: '#9e2230'}}>NEEDED PERMISSION</span>
             </h2>
-            <div style={{height: '2px', width: '48px', background: '#7e1925', marginTop: '1.5rem', marginBottom: '1.5rem', opacity: 0.7}}></div>
+            <div style={{height: '2px', width: '48px', background: '#9e2230', marginTop: '1.5rem', marginBottom: '1.5rem', opacity: 0.7}}></div>
             <a href="/mission" style={{
               fontFamily: 'var(--font-oswald), sans-serif',
               fontSize: '0.72rem',
               letterSpacing: '0.2em',
-              color: '#7e1925',
+              color: '#9e2230',
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
               fontWeight: 500,
-              borderBottom: '1px solid rgba(126,25,37,0.4)',
+              borderBottom: '1px solid rgba(158,34,48,0.4)',
               paddingBottom: '2px',
             }}>
               READ THE FULL MISSION
@@ -286,7 +286,7 @@ export default function Home() {
                 fontSize: '1.8rem',
                 fontWeight: 300,
                 fontStyle: 'italic',
-                color: 'rgba(126,25,37,0.5)',
+                color: 'rgba(158,34,48,0.5)',
                 marginBottom: '1rem',
               }}>{p.num}</div>
               <h3 style={{
@@ -312,8 +312,8 @@ export default function Home() {
       <section id="podcast" className="py-28 px-8 md:px-16 lg:px-24" style={{background: '#0a0a0a', borderTop: '1px solid rgba(240,235,224,0.06)'}}>
 
         <div className="flex items-center gap-3 mb-14">
-          <div style={{width: '2px', height: '1.1rem', background: '#7e1925'}}></div>
-          <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#7e1925', fontWeight: 500}}>THE PODCAST</span>
+          <div style={{width: '2px', height: '1.1rem', background: '#9e2230'}}></div>
+          <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#9e2230', fontWeight: 500}}>THE PODCAST</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center max-w-6xl">
@@ -327,7 +327,7 @@ export default function Home() {
               color: '#f0ebe0',
             }}>
               THE CONVERSATIONS<br/>
-              <span style={{color: '#7e1925'}}>AMERICA NEEDS</span>
+              <span style={{color: '#9e2230'}}>AMERICA NEEDS</span>
             </h2>
 
             <p style={{
@@ -384,7 +384,7 @@ export default function Home() {
 
           {/* Podcast card */}
           <div style={{border: '1px solid rgba(240,235,224,0.08)', position: 'relative', padding: '2rem'}}>
-            <div style={{position: 'absolute', top: 0, left: 0, width: '2px', height: '100%', background: '#7e1925', opacity: 0.7}}></div>
+            <div style={{position: 'absolute', top: 0, left: 0, width: '2px', height: '100%', background: '#9e2230', opacity: 0.7}}></div>
             <div style={{
               width: '100%',
               aspectRatio: '1',
@@ -411,7 +411,7 @@ export default function Home() {
                   color: '#f0ebe0',
                   lineHeight: 1,
                 }}>ABU</div>
-                <div style={{width: '40px', height: '2px', background: '#7e1925', margin: '0.75rem auto'}}></div>
+                <div style={{width: '40px', height: '2px', background: '#9e2230', margin: '0.75rem auto'}}></div>
                 <div style={{
                   fontFamily: 'var(--font-oswald), sans-serif',
                   fontSize: '0.6rem',
@@ -431,19 +431,19 @@ export default function Home() {
       </section>
 
       {/* ── JOIN ── */}
-      <section id="join" className="relative py-28 px-8 md:px-16 lg:px-24 overflow-hidden" style={{background: '#0e0e0e', borderTop: '1px solid rgba(126,25,37,0.2)'}}>
+      <section id="join" className="relative py-28 px-8 md:px-16 lg:px-24 overflow-hidden" style={{background: '#0e0e0e', borderTop: '1px solid rgba(158,34,48,0.2)'}}>
 
         {/* Subtle red wash */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'radial-gradient(ellipse at 50% 100%, rgba(126,25,37,0.07), transparent 70%)',
+          background: 'radial-gradient(ellipse at 50% 100%, rgba(158,34,48,0.07), transparent 70%)',
           pointerEvents: 'none',
         }}></div>
 
         <div className="relative max-w-3xl">
           <div className="flex items-center gap-3 mb-10">
-            <div style={{width: '2px', height: '1.1rem', background: '#7e1925'}}></div>
-            <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#7e1925', fontWeight: 500}}>JOIN THE MOVEMENT</span>
+            <div style={{width: '2px', height: '1.1rem', background: '#9e2230'}}></div>
+            <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#9e2230', fontWeight: 500}}>JOIN THE MOVEMENT</span>
           </div>
 
           <h2 style={{
@@ -456,7 +456,7 @@ export default function Home() {
             marginBottom: '1.5rem',
           }}>
             THIS IS YOUR<br/>
-            <span style={{color: '#7e1925'}}>COUNTRY TOO.</span>
+            <span style={{color: '#9e2230'}}>COUNTRY TOO.</span>
           </h2>
 
           <p style={{
@@ -490,7 +490,7 @@ export default function Home() {
               }}
             />
             <button type="submit" style={{
-              background: '#7e1925',
+              background: '#9e2230',
               color: '#f0ebe0',
               padding: '0.9rem 1.5rem',
               fontFamily: 'var(--font-oswald), sans-serif',
