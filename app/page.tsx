@@ -61,25 +61,25 @@ export default function Home() {
         </div>
 
         {/* Hero copy — centered */}
-        <div className="relative px-8 md:px-16 lg:px-24 max-w-4xl mx-auto pt-36 pb-20 text-center" style={{zIndex: 2}}>
+        <div className="relative px-8 md:px-16 lg:px-24 mx-auto pt-36 pb-20 text-center w-full" style={{zIndex: 2}}>
 
-          {/* Main title — engrossed Declaration-style script */}
+          {/* Main title — antique inked type, single line, full width */}
           <h1 style={{
-            fontFamily: 'var(--font-script), cursive',
-            fontWeight: 700,
-            lineHeight: 0.82,
-            letterSpacing: '0.01em',
-            fontSize: 'clamp(5.5rem, 19vw, 15rem)',
+            fontFamily: 'var(--font-script), Georgia, serif',
+            fontWeight: 400,
+            lineHeight: 1.0,
+            letterSpacing: '0.005em',
+            fontSize: 'clamp(2rem, 12vw, 13rem)',
             color: '#c8bfad',
             textAlign: 'center',
+            whiteSpace: 'nowrap',
+            width: '100%',
           }}>
-            <span className="block">Aware</span>
-            <span className="block" style={{color: '#b22234'}}>But</span>
-            <span className="block">Unafraid</span>
+            Aware <span style={{color: '#b22234'}}>But</span> Unafraid
           </h1>
 
           {/* Rule */}
-          <div className="flex items-center justify-center gap-4 mt-8 mb-8">
+          <div className="flex items-center justify-center gap-4 mt-8 mb-8 max-w-4xl mx-auto">
             <div style={{height: '1px', width: '48px', background: '#b22234', opacity: 0.7}}></div>
             <div style={{width: '5px', height: '5px', background: '#b22234', transform: 'rotate(45deg)', opacity: 0.8}}></div>
             <div style={{height: '1px', width: '48px', background: '#b22234', opacity: 0.7}}></div>

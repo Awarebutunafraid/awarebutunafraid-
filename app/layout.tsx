@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { EB_Garamond, Tangerine } from "next/font/google";
+import { EB_Garamond, IM_Fell_English } from "next/font/google";
 import "./globals.css";
 
 // Refined historic serif — used for headings AND body (replaces the old
@@ -19,11 +19,12 @@ const ebGaramondSerif = EB_Garamond({
   style: ["normal", "italic"],
 });
 
-// Engrossed Declaration-style script — used only for the big hero title.
-const tangerine = Tangerine({
+// Antique inked type (Trattatello-adjacent) — used only for the big hero title.
+const imFellEnglish = IM_Fell_English({
   variable: "--font-script",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -39,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ebGaramond.variable} ${ebGaramondSerif.variable} ${tangerine.variable} h-full antialiased`}
+      className={`${ebGaramond.variable} ${ebGaramondSerif.variable} ${imFellEnglish.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
