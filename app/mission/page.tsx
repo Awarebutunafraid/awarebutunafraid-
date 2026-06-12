@@ -11,7 +11,7 @@ export default function MissionPage() {
             AWARE BUT UNAFRAID
           </a>
           <a href="/#join" style={{
-            background: '#b22234',
+            background: '#7e1925',
             color: '#c8bfad',
             padding: '0.5rem 1.25rem',
             fontFamily: 'var(--font-oswald), sans-serif',
@@ -23,15 +23,15 @@ export default function MissionPage() {
           </a>
         </div>
         <div className="flex items-center justify-center gap-3 pb-2.5">
-          <div style={{ width: '24px', height: '1px', background: '#b22234', opacity: 0.7 }}></div>
+          <div style={{ width: '24px', height: '1px', background: '#7e1925', opacity: 0.7 }}></div>
           <span style={{
             fontFamily: 'var(--font-oswald), sans-serif',
             fontSize: '0.72rem',
             letterSpacing: '0.35em',
-            color: '#b22234',
+            color: '#7e1925',
             fontWeight: 500,
           }}>A MOVEMENT &nbsp;·&nbsp; A MISSION &nbsp;·&nbsp; A MOMENT</span>
-          <div style={{ width: '24px', height: '1px', background: '#b22234', opacity: 0.7 }}></div>
+          <div style={{ width: '24px', height: '1px', background: '#7e1925', opacity: 0.7 }}></div>
         </div>
       </nav>
 
@@ -39,7 +39,7 @@ export default function MissionPage() {
       <section className="relative pt-48 pb-24 px-8 md:px-16 lg:px-24 overflow-hidden" style={{ background: '#0d0d0d' }}>
 
         {/* Subtle red accent — left edge */}
-        <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{ background: 'linear-gradient(to bottom, transparent 0%, #b22234 20%, #b22234 80%, transparent 100%)', opacity: 0.6 }}></div>
+        <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{ background: 'linear-gradient(to bottom, transparent 0%, #7e1925 20%, #7e1925 80%, transparent 100%)', opacity: 0.6 }}></div>
 
         {/* Background texture */}
         <div style={{
@@ -52,15 +52,15 @@ export default function MissionPage() {
         {/* Red wash from bottom */}
         <div style={{
           position: 'absolute', bottom: 0, left: 0, right: 0, height: '40%',
-          background: 'linear-gradient(to top, rgba(178,34,52,0.05), transparent)',
+          background: 'linear-gradient(to top, rgba(126,25,37,0.05), transparent)',
           pointerEvents: 'none',
         }}></div>
 
         <div className="relative max-w-5xl">
           {/* Section marker */}
           <div className="flex items-center gap-3 mb-10">
-            <div style={{ width: '2px', height: '1.1rem', background: '#b22234' }}></div>
-            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#b22234', fontWeight: 500 }}>THE MISSION</span>
+            <div style={{ width: '2px', height: '1.1rem', background: '#7e1925' }}></div>
+            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#7e1925', fontWeight: 500 }}>THE MISSION</span>
           </div>
 
           <h1 style={{
@@ -74,13 +74,13 @@ export default function MissionPage() {
           }}>
             TRUTH HAS<br />
             NEVER NEEDED<br />
-            <span style={{ color: '#b22234' }}>PERMISSION.</span>
+            <span style={{ color: '#7e1925' }}>PERMISSION.</span>
           </h1>
 
           <div className="flex items-center gap-4 mb-10">
-            <div style={{ height: '1px', width: '48px', background: '#b22234', opacity: 0.7 }}></div>
-            <div style={{ width: '5px', height: '5px', background: '#b22234', transform: 'rotate(45deg)', opacity: 0.8 }}></div>
-            <div style={{ height: '1px', width: '48px', background: '#b22234', opacity: 0.7 }}></div>
+            <div style={{ height: '1px', width: '48px', background: '#7e1925', opacity: 0.7 }}></div>
+            <div style={{ width: '5px', height: '5px', background: '#7e1925', transform: 'rotate(45deg)', opacity: 0.8 }}></div>
+            <div style={{ height: '1px', width: '48px', background: '#7e1925', opacity: 0.7 }}></div>
           </div>
 
           <p style={{
@@ -102,8 +102,8 @@ export default function MissionPage() {
         <div className="max-w-5xl">
 
           <div className="flex items-center gap-3 mb-12">
-            <div style={{ width: '2px', height: '1.1rem', background: '#b22234' }}></div>
-            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#b22234', fontWeight: 500 }}>THE PROBLEM</span>
+            <div style={{ width: '2px', height: '1.1rem', background: '#7e1925' }}></div>
+            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#7e1925', fontWeight: 500 }}>THE PROBLEM</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -118,9 +118,9 @@ export default function MissionPage() {
                 marginBottom: '1.5rem',
               }}>
                 FEAR IS THE<br />
-                <span style={{ color: '#b22234' }}>OLDEST WEAPON.</span>
+                <span style={{ color: '#7e1925' }}>OLDEST WEAPON.</span>
               </h2>
-              <div style={{ height: '2px', width: '48px', background: '#b22234', marginBottom: '2rem', opacity: 0.7 }}></div>
+              <div style={{ height: '2px', width: '48px', background: '#7e1925', marginBottom: '2rem', opacity: 0.7 }}></div>
               <p style={{
                 fontFamily: 'var(--font-source-serif), Georgia, serif',
                 fontSize: '1.1rem',
@@ -156,14 +156,14 @@ export default function MissionPage() {
 
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'radial-gradient(ellipse at 0% 50%, rgba(178,34,52,0.06), transparent 60%)',
+          background: 'radial-gradient(ellipse at 0% 50%, rgba(126,25,37,0.06), transparent 60%)',
           pointerEvents: 'none',
         }}></div>
 
         <div className="relative max-w-5xl">
           <div className="flex items-center gap-3 mb-12">
-            <div style={{ width: '2px', height: '1.1rem', background: '#b22234' }}></div>
-            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#b22234', fontWeight: 500 }}>THE ANSWER</span>
+            <div style={{ width: '2px', height: '1.1rem', background: '#7e1925' }}></div>
+            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#7e1925', fontWeight: 500 }}>THE ANSWER</span>
           </div>
 
           <h2 style={{
@@ -176,7 +176,7 @@ export default function MissionPage() {
             marginBottom: '3rem',
           }}>
             AWARE BUT UNAFRAID<br />
-            <span style={{ color: '#b22234' }}>IS THE ANTIDOTE.</span>
+            <span style={{ color: '#7e1925' }}>IS THE ANTIDOTE.</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0" style={{ borderTop: '1px solid rgba(240,235,224,0.07)' }}>
@@ -206,7 +206,7 @@ export default function MissionPage() {
                   fontSize: '1.8rem',
                   fontWeight: 300,
                   fontStyle: 'italic',
-                  color: 'rgba(178,34,52,0.5)',
+                  color: 'rgba(126,25,37,0.5)',
                   marginBottom: '1rem',
                 }}>{p.num}</div>
                 <h3 style={{
@@ -234,8 +234,8 @@ export default function MissionPage() {
         <div className="max-w-5xl">
 
           <div className="flex items-center gap-3 mb-12">
-            <div style={{ width: '2px', height: '1.1rem', background: '#b22234' }}></div>
-            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#b22234', fontWeight: 500 }}>THE VISION</span>
+            <div style={{ width: '2px', height: '1.1rem', background: '#7e1925' }}></div>
+            <span style={{ fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#7e1925', fontWeight: 500 }}>THE VISION</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -250,9 +250,9 @@ export default function MissionPage() {
               }}>
                 THIS IS NOT<br />
                 A POLITICAL<br />
-                <span style={{ color: '#b22234' }}>PARTY.</span>
+                <span style={{ color: '#7e1925' }}>PARTY.</span>
               </h2>
-              <div style={{ height: '2px', width: '48px', background: '#b22234', marginTop: '1.5rem', marginBottom: '2rem', opacity: 0.7 }}></div>
+              <div style={{ height: '2px', width: '48px', background: '#7e1925', marginTop: '1.5rem', marginBottom: '2rem', opacity: 0.7 }}></div>
               <p style={{
                 fontFamily: 'var(--font-source-serif), Georgia, serif',
                 fontSize: '1.1rem',
@@ -298,19 +298,19 @@ export default function MissionPage() {
       </section>
 
       {/* ── CREED ── */}
-      <section className="relative py-28 px-8 md:px-16 lg:px-24 overflow-hidden" style={{ background: '#0a0a0a', borderTop: '1px solid rgba(178,34,52,0.2)' }}>
+      <section className="relative py-28 px-8 md:px-16 lg:px-24 overflow-hidden" style={{ background: '#0a0a0a', borderTop: '1px solid rgba(126,25,37,0.2)' }}>
 
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'radial-gradient(ellipse at 50% 50%, rgba(178,34,52,0.07), transparent 70%)',
+          background: 'radial-gradient(ellipse at 50% 50%, rgba(126,25,37,0.07), transparent 70%)',
           pointerEvents: 'none',
         }}></div>
 
         <div className="relative max-w-3xl mx-auto text-center">
           <div className="flex items-center justify-center gap-4 mb-12">
-            <div style={{ height: '1px', width: '48px', background: '#b22234', opacity: 0.5 }}></div>
-            <div style={{ width: '5px', height: '5px', background: '#b22234', transform: 'rotate(45deg)', opacity: 0.7 }}></div>
-            <div style={{ height: '1px', width: '48px', background: '#b22234', opacity: 0.5 }}></div>
+            <div style={{ height: '1px', width: '48px', background: '#7e1925', opacity: 0.5 }}></div>
+            <div style={{ width: '5px', height: '5px', background: '#7e1925', transform: 'rotate(45deg)', opacity: 0.7 }}></div>
+            <div style={{ height: '1px', width: '48px', background: '#7e1925', opacity: 0.5 }}></div>
           </div>
 
           <h2 style={{
@@ -323,9 +323,9 @@ export default function MissionPage() {
             marginBottom: '2.5rem',
           }}>
             WE ARE<br />
-            <span style={{ color: '#b22234' }}>AWARE.</span><br />
+            <span style={{ color: '#7e1925' }}>AWARE.</span><br />
             AND WE ARE<br />
-            <span style={{ color: '#b22234' }}>UNAFRAID.</span>
+            <span style={{ color: '#7e1925' }}>UNAFRAID.</span>
           </h2>
 
           <p style={{
@@ -343,7 +343,7 @@ export default function MissionPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <a href="/#join"
               style={{
-                background: '#b22234',
+                background: '#7e1925',
                 color: '#f0ebe0',
                 padding: '0.9rem 2.2rem',
                 fontFamily: 'var(--font-oswald), sans-serif',
@@ -357,11 +357,11 @@ export default function MissionPage() {
               }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLElement).style.background = 'transparent';
-                (e.currentTarget as HTMLElement).style.border = '1px solid #b22234';
-                (e.currentTarget as HTMLElement).style.color = '#b22234';
+                (e.currentTarget as HTMLElement).style.border = '1px solid #7e1925';
+                (e.currentTarget as HTMLElement).style.color = '#7e1925';
               }}
               onMouseLeave={e => {
-                (e.currentTarget as HTMLElement).style.background = '#b22234';
+                (e.currentTarget as HTMLElement).style.background = '#7e1925';
                 (e.currentTarget as HTMLElement).style.border = '1px solid transparent';
                 (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
               }}
@@ -386,8 +386,8 @@ export default function MissionPage() {
                 transition: 'background 0.2s, color 0.2s, border-color 0.2s',
               }}
               onMouseEnter={e => {
-                (e.currentTarget as HTMLElement).style.background = '#b22234';
-                (e.currentTarget as HTMLElement).style.borderColor = '#b22234';
+                (e.currentTarget as HTMLElement).style.background = '#7e1925';
+                (e.currentTarget as HTMLElement).style.borderColor = '#7e1925';
                 (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
               }}
               onMouseLeave={e => {
@@ -401,9 +401,9 @@ export default function MissionPage() {
           </div>
 
           <div className="flex items-center justify-center gap-4 mt-12">
-            <div style={{ height: '1px', width: '48px', background: '#b22234', opacity: 0.5 }}></div>
-            <div style={{ width: '5px', height: '5px', background: '#b22234', transform: 'rotate(45deg)', opacity: 0.7 }}></div>
-            <div style={{ height: '1px', width: '48px', background: '#b22234', opacity: 0.5 }}></div>
+            <div style={{ height: '1px', width: '48px', background: '#7e1925', opacity: 0.5 }}></div>
+            <div style={{ width: '5px', height: '5px', background: '#7e1925', transform: 'rotate(45deg)', opacity: 0.7 }}></div>
+            <div style={{ height: '1px', width: '48px', background: '#7e1925', opacity: 0.5 }}></div>
           </div>
         </div>
       </section>
