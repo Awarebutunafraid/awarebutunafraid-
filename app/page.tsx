@@ -74,7 +74,11 @@ export default function Home() {
             color: '#c8bfad',
             textAlign: 'center',
             whiteSpace: 'nowrap',
-            width: '100%',
+            position: 'relative',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            width: '100vw',
+            maxWidth: '100vw',
           }}>
             Aware <span style={{color: 'rgba(158,34,48,0.78)', WebkitTextStroke: '2px #000', paintOrder: 'stroke fill'}}>But</span> Unafraid
           </h1>
