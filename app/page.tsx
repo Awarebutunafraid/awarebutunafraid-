@@ -60,28 +60,27 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-[3px]" style={{background: 'linear-gradient(to bottom, transparent 0%, #9e2230 20%, #9e2230 80%, transparent 100%)', opacity: 0.7}}></div>
         </div>
 
-        {/* Hero copy — title anchored to bottom of top third */}
-        <div className="relative px-8 md:px-16 lg:px-24 mx-auto pb-20 text-center w-full" style={{zIndex: 2, paddingTop: '34vh'}}>
+        {/* Main title — full-width direct child so it centers on the viewport */}
+        <h1 style={{
+          position: 'relative',
+          zIndex: 2,
+          fontFamily: 'var(--font-script), Georgia, serif',
+          fontWeight: 700,
+          lineHeight: 1.05,
+          letterSpacing: '0.02em',
+          textTransform: 'uppercase',
+          fontSize: 'clamp(2.25rem, 8.8vw, 9.25rem)',
+          color: '#c8bfad',
+          textAlign: 'center',
+          whiteSpace: 'nowrap',
+          width: '100%',
+          paddingTop: '34vh',
+        }}>
+          Aware <span style={{color: 'rgba(158,34,48,0.78)', WebkitTextStroke: '2px #000', paintOrder: 'stroke fill'}}>But</span> Unafraid
+        </h1>
 
-          {/* Main title — high-contrast serif, all caps, single line, full width */}
-          <h1 style={{
-            fontFamily: 'var(--font-script), Georgia, serif',
-            fontWeight: 700,
-            lineHeight: 1.05,
-            letterSpacing: '0.02em',
-            textTransform: 'uppercase',
-            fontSize: 'clamp(2.25rem, 8.8vw, 9.25rem)',
-            color: '#c8bfad',
-            textAlign: 'center',
-            whiteSpace: 'nowrap',
-            position: 'relative',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: '100vw',
-            maxWidth: '100vw',
-          }}>
-            Aware <span style={{color: 'rgba(158,34,48,0.78)', WebkitTextStroke: '2px #000', paintOrder: 'stroke fill'}}>But</span> Unafraid
-          </h1>
+        {/* Hero copy — subhead + CTAs below the title */}
+        <div className="relative px-8 md:px-16 lg:px-24 mx-auto pb-20 text-center w-full" style={{zIndex: 2, paddingTop: '0'}}>
 
           {/* Rule */}
           <div className="flex items-center justify-center gap-4 mt-16 mb-8 max-w-4xl mx-auto">
