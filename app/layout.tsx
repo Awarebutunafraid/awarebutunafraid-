@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { EB_Garamond, IM_Fell_English } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 // Refined historic serif — used for headings AND body (replaces the old
@@ -19,12 +20,12 @@ const ebGaramondSerif = EB_Garamond({
   style: ["normal", "italic"],
 });
 
-// Antique inked type (Trattatello-adjacent) — used only for the big hero title.
-const imFellEnglish = IM_Fell_English({
+// Aquiline Two — antique quill handwriting (Manfred Klein, public domain).
+// Self-hosted; used only for the big hero title.
+const aquiline = localFont({
+  src: "../public/fonts/AquilineTwo.ttf",
   variable: "--font-script",
-  subsets: ["latin"],
-  weight: ["400"],
-  style: ["normal", "italic"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -40,7 +41,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ebGaramond.variable} ${ebGaramondSerif.variable} ${imFellEnglish.variable} h-full antialiased`}
+      className={`${ebGaramond.variable} ${ebGaramondSerif.variable} ${aquiline.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
