@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { EB_Garamond } from "next/font/google";
-import localFont from "next/font/local";
+import { EB_Garamond, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 // Refined historic serif — used for headings AND body (replaces the old
@@ -20,12 +19,12 @@ const ebGaramondSerif = EB_Garamond({
   style: ["normal", "italic"],
 });
 
-// Aquiline Two — antique quill handwriting (Manfred Klein, public domain).
-// Self-hosted; used only for the big hero title.
-const aquiline = localFont({
-  src: "../public/fonts/AquilineTwo.ttf",
+// Playfair Display — high-contrast didone serif for the big hero title (caps).
+const playfair = Playfair_Display({
   variable: "--font-script",
-  display: "swap",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -41,7 +40,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${ebGaramond.variable} ${ebGaramondSerif.variable} ${aquiline.variable} h-full antialiased`}
+      className={`${ebGaramond.variable} ${ebGaramondSerif.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
