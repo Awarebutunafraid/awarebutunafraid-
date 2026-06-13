@@ -61,7 +61,7 @@ export default function Home() {
         </div>
 
         {/* Hero copy — title anchored to bottom of top third */}
-        <div className="relative px-8 md:px-16 lg:px-24 mx-auto pb-20 text-center w-full" style={{zIndex: 2, paddingTop: '30vh'}}>
+        <div className="relative px-8 md:px-16 lg:px-24 mx-auto pb-20 text-center w-full" style={{zIndex: 2, paddingTop: '34vh'}}>
 
           {/* Main title — high-contrast serif, all caps, single line, full width */}
           <h1 style={{
@@ -70,7 +70,7 @@ export default function Home() {
             lineHeight: 1.05,
             letterSpacing: '0.02em',
             textTransform: 'uppercase',
-            fontSize: 'clamp(2rem, 8vw, 8.5rem)',
+            fontSize: 'clamp(2.25rem, 8.8vw, 9.25rem)',
             color: '#c8bfad',
             textAlign: 'center',
             whiteSpace: 'nowrap',
