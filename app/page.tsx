@@ -238,7 +238,7 @@ export default function Home() {
         {/* Dark overlay so the copy stays readable on the parchment */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to bottom, rgba(13,13,13,0.58) 0%, rgba(13,13,13,0.68) 45%, rgba(13,13,13,0.82) 78%, rgba(13,13,13,0.95) 92%, #0d0d0d 100%)',
+          background: 'linear-gradient(to bottom, rgba(13,13,13,0.58) 0%, rgba(13,13,13,0.64) 40%, rgba(13,13,13,0.72) 58%, rgba(13,13,13,0.80) 72%, rgba(13,13,13,0.87) 82%, rgba(13,13,13,0.93) 90%, rgba(13,13,13,0.97) 96%, #0d0d0d 100%)',
           pointerEvents: 'none',
         }}></div>
 
@@ -325,9 +325,10 @@ export default function Home() {
             { num: "II", title: "Speak Honestly", body: "Say what needs to be said. The movement grows when people stop whispering and start talking out loud." },
             { num: "III", title: "Stand Firm", body: "Knowledge without courage is useless. This is for those ready to act on what they know, in faith and in grit." },
           ].map((p, i) => (
-            <div key={p.num} className="py-10 pr-10" style={{
+            <div key={p.num} className="py-10" style={{
               borderRight: i < 2 ? '1px solid rgba(240,235,224,0.07)' : 'none',
-              paddingLeft: i > 0 ? '2.5rem' : '0',
+              paddingLeft: i === 0 ? '0' : '2.5rem',
+              paddingRight: i === 2 ? '0' : '2.5rem',
             }}>
               <div style={{
                 fontFamily: 'var(--font-source-serif), Georgia, serif',
