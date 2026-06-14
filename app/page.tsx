@@ -216,8 +216,8 @@ export default function Home() {
           backgroundSize: 'cover',
           backgroundPosition: 'center top',
           backgroundRepeat: 'no-repeat',
-          WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 20%, transparent 42%)',
-          maskImage: 'linear-gradient(to bottom, black 0%, black 20%, transparent 42%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 28%, transparent 52%)',
+          maskImage: 'linear-gradient(to bottom, black 0%, black 28%, transparent 52%)',
           pointerEvents: 'none',
         }}></div>
 
@@ -230,22 +230,22 @@ export default function Home() {
           backgroundRepeat: 'no-repeat',
           filter: 'blur(7px)',
           transform: 'scale(1.04)',
-          WebkitMaskImage: 'linear-gradient(to bottom, transparent 16%, black 38%, transparent 80%)',
-          maskImage: 'linear-gradient(to bottom, transparent 16%, black 38%, transparent 80%)',
+          WebkitMaskImage: 'linear-gradient(to bottom, transparent 22%, black 48%, black 78%, transparent 96%)',
+          maskImage: 'linear-gradient(to bottom, transparent 22%, black 48%, black 78%, transparent 96%)',
           pointerEvents: 'none',
         }}></div>
 
         {/* Dark overlay so the copy stays readable on the parchment */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to bottom, rgba(13,13,13,0.6) 0%, rgba(13,13,13,0.72) 35%, rgba(13,13,13,0.9) 68%, #0d0d0d 100%)',
+          background: 'linear-gradient(to bottom, rgba(13,13,13,0.58) 0%, rgba(13,13,13,0.68) 45%, rgba(13,13,13,0.82) 78%, rgba(13,13,13,0.95) 92%, #0d0d0d 100%)',
           pointerEvents: 'none',
         }}></div>
 
         {/* Section marker */}
-        <div className="relative flex items-center gap-3 mb-14" style={{zIndex: 2}}>
-          <div style={{width: '2px', height: '1.1rem', background: '#9e2230'}}></div>
-          <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '0.68rem', letterSpacing: '0.35em', color: '#9e2230', fontWeight: 500}}>THE MISSION</span>
+        <div className="relative flex items-center gap-4 mb-14" style={{zIndex: 2}}>
+          <div style={{width: '4px', height: '2.25rem', background: '#9e2230'}}></div>
+          <span style={{fontFamily: 'var(--font-oswald), sans-serif', fontSize: '1.5rem', letterSpacing: '0.28em', color: '#f0ebe0', fontWeight: 800}}>THE MISSION</span>
         </div>
 
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-16 items-start max-w-6xl" style={{zIndex: 2}}>
@@ -264,18 +264,28 @@ export default function Home() {
             <div style={{height: '2px', width: '48px', background: '#9e2230', marginTop: '1.5rem', marginBottom: '1.5rem', opacity: 0.7}}></div>
             <a href="/mission" style={{
               fontFamily: 'var(--font-oswald), sans-serif',
-              fontSize: '0.72rem',
+              fontSize: '1.05rem',
               letterSpacing: '0.2em',
-              color: '#9e2230',
+              color: '#f0ebe0',
               display: 'inline-flex',
               alignItems: 'center',
-              gap: '0.5rem',
-              fontWeight: 500,
-              borderBottom: '1px solid rgba(158,34,48,0.4)',
-              paddingBottom: '2px',
-            }}>
+              gap: '0.65rem',
+              fontWeight: 600,
+              borderBottom: '1px solid rgba(240,235,224,0.4)',
+              paddingBottom: '4px',
+              transition: 'color 0.2s, border-color 0.2s',
+            }}
+              onMouseEnter={e => {
+                (e.currentTarget as HTMLElement).style.color = '#9e2230';
+                (e.currentTarget as HTMLElement).style.borderBottomColor = 'rgba(158,34,48,0.4)';
+              }}
+              onMouseLeave={e => {
+                (e.currentTarget as HTMLElement).style.color = '#f0ebe0';
+                (e.currentTarget as HTMLElement).style.borderBottomColor = 'rgba(240,235,224,0.4)';
+              }}
+            >
               READ THE FULL MISSION
-              <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
               </svg>
             </a>
@@ -284,10 +294,10 @@ export default function Home() {
           <div>
             <p style={{
               fontFamily: 'var(--font-source-serif), Georgia, serif',
-              fontSize: '1.15rem',
-              fontWeight: 300,
-              color: 'rgba(240,235,224,0.65)',
-              lineHeight: 1.85,
+              fontSize: '1.4rem',
+              fontWeight: 700,
+              color: 'rgba(240,235,224,0.8)',
+              lineHeight: 1.7,
               marginBottom: '1.25rem',
               fontStyle: 'italic',
             }}>
@@ -295,10 +305,10 @@ export default function Home() {
             </p>
             <p style={{
               fontFamily: 'var(--font-source-serif), Georgia, serif',
-              fontSize: '0.975rem',
-              fontWeight: 400,
-              color: 'rgba(240,235,224,0.45)',
-              lineHeight: 1.9,
+              fontSize: '1.15rem',
+              fontWeight: 700,
+              color: 'rgba(240,235,224,0.6)',
+              lineHeight: 1.85,
             }}>
               Aware But Unafraid exists for those who choose to see through it — who love this country
               enough to be honest about it, and who refuse to let fear be the last word. Not a political
@@ -321,24 +331,24 @@ export default function Home() {
             }}>
               <div style={{
                 fontFamily: 'var(--font-source-serif), Georgia, serif',
-                fontSize: '1.8rem',
+                fontSize: '2.5rem',
                 fontWeight: 300,
                 fontStyle: 'italic',
-                color: 'rgba(158,34,48,0.5)',
+                color: 'rgba(158,34,48,0.55)',
                 marginBottom: '1rem',
               }}>{p.num}</div>
               <h3 style={{
                 fontFamily: 'var(--font-oswald), sans-serif',
                 fontWeight: 600,
-                fontSize: '0.9rem',
+                fontSize: '1.1rem',
                 letterSpacing: '0.15em',
                 color: '#f0ebe0',
                 marginBottom: '0.75rem',
               }}>{p.title.toUpperCase()}</h3>
               <p style={{
                 fontFamily: 'var(--font-source-serif), Georgia, serif',
-                fontSize: '0.9rem',
-                color: 'rgba(240,235,224,0.4)',
+                fontSize: '1.05rem',
+                color: 'rgba(240,235,224,0.5)',
                 lineHeight: 1.8,
               }}>{p.body}</p>
             </div>
